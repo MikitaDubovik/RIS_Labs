@@ -35,7 +35,8 @@ namespace Second.Server
                 {
                     ns = new NetworkStream(socket);
                     ThreadClass threadClass = new ThreadClass();
-                    Thread thread = threadClass.Start(ns, FileName);
+                    threadClass.Start(ns, FileName);
+                    Thread.Sleep(3000);
                 }
             }
         }

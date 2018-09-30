@@ -44,9 +44,11 @@ namespace Second.Server
             {
                 var sent = new byte[256];
 
-                sent = ae.GetBytes(fw.GetAll());
+                sent = ae.GetBytes(fw.GetAll().Length == 0 ? "Hello" : fw.GetAll());
 
                 ns.Write(sent, 0, sent.Length);
+
+                return;
             }
 
             if (string.Compare(cmd, "add", StringComparison.Ordinal) == 0)
@@ -57,6 +59,8 @@ namespace Second.Server
                 sent = ae.GetBytes("Ok");
 
                 ns.Write(sent, 0, sent.Length);
+
+                return;
             }
 
             if (string.Compare(cmd, "del", StringComparison.Ordinal) == 0)
@@ -66,6 +70,8 @@ namespace Second.Server
                 sent = ae.GetBytes("Ok");
 
                 ns.Write(sent, 0, sent.Length);
+
+                return;
             }
 
             if (string.Compare(cmd, "up", StringComparison.Ordinal) == 0)
@@ -76,6 +82,8 @@ namespace Second.Server
                 sent = ae.GetBytes("Ok");
 
                 ns.Write(sent, 0, sent.Length);
+
+                return;
             }
 
             if (string.Compare(cmd, "search", StringComparison.Ordinal) == 0)
@@ -84,6 +92,8 @@ namespace Second.Server
                 sent = ae.GetBytes(fw.Search(information));
 
                 ns.Write(sent, 0, sent.Length);
+
+                return;
             }
         }
     }
