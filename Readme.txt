@@ -9,7 +9,7 @@ Path to file: Your project folder -> bin -> Repo.txt
 
 Lab 2: 
 How to Kickoff - run Server -> push Start -> run Client -> do all you need
-If doesn't work in easiest way -> run Server in debug mode and Client from bin .exe
+If doesn't work in easiest way -> open two VS. At first run Server in DEBUG mode and at second run Client in DEBUG mode too
 
 Lab 3:
 Database is in Resources
