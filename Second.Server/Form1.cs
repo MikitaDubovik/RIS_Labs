@@ -2,8 +2,6 @@
 using System.IO;
 using System.Net;
 using System.Net.Sockets;
-using System.Text;
-using System.Threading;
 using System.Windows.Forms;
 
 namespace Second.Server
@@ -25,18 +23,19 @@ namespace Second.Server
         {
             IPHostEntry IpHost = Dns.GetHostEntry("localhost");
             IPAddress IpAddr = IpHost.AddressList[0];
-            
+
             listener = new TcpListener(IpAddr, 8080);
             listener.Start();
-            socket = listener.AcceptSocket();
-            while (true)
+            using (socket = listener.AcceptSocket())
             {
-                if (socket.Connected)
+                while (true)
                 {
-                    ns = new NetworkStream(socket);
-                    ThreadClass threadClass = new ThreadClass();
-                    threadClass.Start(ns, FileName);
-                    Thread.Sleep(3000);
+                    if (socket.Connected)
+                    {
+                        ns = new NetworkStream(socket);
+                        ThreadClass threadClass = new ThreadClass();
+                        threadClass.Start(ns, FileName);
+                    }
                 }
             }
         }

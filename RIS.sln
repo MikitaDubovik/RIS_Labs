@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 15.0.27428.2005
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4E44260F-B560-4778-8CFE-C13C27E20523}"
+	ProjectSection(SolutionItems) = preProject
+		Fifth\Fifth.docx = Fifth\Fifth.docx
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Second.Server", "Second.Server\Second.Server.csproj", "{E20B204F-F176-4048-95E6-1F8459601BEB}"
 EndProject
