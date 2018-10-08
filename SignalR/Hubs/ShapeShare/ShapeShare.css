@@ -60,6 +60,11 @@ body {
         height: 100%;
     }
 
+    .shape.circle {
+        background: #2f77c8;
+        border-radius: 50%;
+    }
+
 .user-info {
     color: #555;
     font-size: 11px;
