@@ -98,7 +98,7 @@ namespace Second.Server
                     return;
                 }
             }
-            catch(Exception e)
+            catch(Exception)
             {
                 return;
             }
