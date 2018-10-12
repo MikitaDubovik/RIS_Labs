@@ -98,6 +98,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <Compile Include="Hubs\Chat\Chat.cs" />
+    <Compile Include="Hubs\Chat\ContentProviders\CollegeHumorContentProvider.cs" />
+    <Compile Include="Hubs\Chat\ContentProviders\EmbedContentProvider.cs" />
+    <Compile Include="Hubs\Chat\ContentProviders\IContentProvider.cs" />
+    <Compile Include="Hubs\Chat\ContentProviders\ImageContentProvider.cs" />
+    <Compile Include="Hubs\Chat\ContentProviders\YoutubeContentProvider.cs" />
     <Compile Include="Startup.SignalR.cs" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -107,6 +113,11 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Hubs\Chat\Chat.css" />
+    <Content Include="Hubs\Chat\Chat.js" />
+    <Content Include="Hubs\Chat\index.htm" />
+    <Content Include="Hubs\Chat\Mobile.css" />
+    <Content Include="Hubs\Chat\mobile.htm" />
     <Content Include="Hubs\ShapeShare\index.htm" />
     <Content Include="Hubs\ShapeShare\ShapeShare.css" />
     <Content Include="Hubs\ShapeShare\ShapeShare.js" />

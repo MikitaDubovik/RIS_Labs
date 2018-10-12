@@ -25,13 +25,13 @@ $(function () {
                 break;
             case "square":
                 el = $("<div />");
+                break;
             case "rectangle":
             default:
                 el = $("<div />");
                 break;
         }
-        el
-            .css({
+        el.css({
                 width: shape.Width,
                 height: shape.Height,
                 left: shape.Location.X,
