@@ -1,8 +1,10 @@
 *ЗАШЕЛ - ПОСТАВИЛ ЗВЕЗДОЧКУ, АГА*
 Как запускать вторую - ниже, со всеми остальными легко разобраться
 
-VAR 4 - ice-cream
 Path to file: Your project folder -> bin -> Repo.txt
+
+Lab 1:
+VAR 4 - ice-cream
 
 Lab 2: 
 How to Kickoff - run Server -> push Start -> run Client -> do all you need
@@ -12,3 +14,6 @@ At the end close Client as a usual program, but Server you have to close by stop
 Lab 3:
 The database is in Resources
 If you have any trouble, you should change DataConnectionString - In app.config, DataSource = blablabla
+
+Lab 5:
+Var 2 - Bus depot
