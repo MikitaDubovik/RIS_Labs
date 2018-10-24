@@ -19,7 +19,7 @@ namespace Fifth
             this.fileName = fileName;
         }
 
-        public virtual List<Bus> Load(string day = null)
+        public virtual IEnumerable<Bus> Load(string day = null)
         {
             return new List<Bus>();
         }

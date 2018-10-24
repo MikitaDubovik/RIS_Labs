@@ -1,6 +1,9 @@
-﻿using Fifth.Extentions;
+﻿using Fifth.BusHelper;
+using Fifth.Extentions;
 using System;
+using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 
 namespace Fifth.Service
 {
@@ -63,15 +66,15 @@ namespace Fifth.Service
         public void PrintAll()
         {
             var items = _xmlservice.Load();
-            foreach (var item in items)
-            {
-                Console.WriteLine("ID - " + item.Id);
-                Console.WriteLine("Destination - " + item.Destination);
-                Console.WriteLine("Day - " + item.Day);
-                Console.WriteLine("Cost in BYN - " + item.Cost + " - in USD - " + dollarExchangeRate.Count(item.Cost) + " - in EUR - " + euroExchangeRate.Count(item.Cost));
-                Console.WriteLine("Number of free place - " + item.FreePlace);
-                Console.WriteLine();
-            }
+            PrintForBasic(items);
+        }
+
+        public void PrintAllInDay()
+        {
+            Console.WriteLine("Choose day");
+            var day = Console.ReadLine();
+            var items = _xmlservice.Load();
+            PrintForBasic(items.Where(i=>i.Day.Contains(day)));
         }
 
         public int Print()
@@ -95,6 +98,19 @@ namespace Fifth.Service
             }
 
             return items.Count;
+        }
+
+        private void PrintForBasic(IEnumerable<Bus> items)
+        {
+            foreach (var item in items)
+            {
+                Console.WriteLine("ID - " + item.Id);
+                Console.WriteLine("Destination - " + item.Destination);
+                Console.WriteLine("Day - " + item.Day);
+                Console.WriteLine("Cost in BYN - " + item.Cost + " - in USD - " + dollarExchangeRate.Count(item.Cost) + " - in EUR - " + euroExchangeRate.Count(item.Cost));
+                Console.WriteLine("Number of free place - " + item.FreePlace);
+                Console.WriteLine();
+            }
         }
     }
 }

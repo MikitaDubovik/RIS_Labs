@@ -10,6 +10,8 @@ using Owin;
 
 [assembly: OwinStartup(typeof(Startup))]
 //http://localhost:50738/Hubs/ShapeShare/
+// /Chat
+// /ShapeShare
 namespace Microsoft.AspNet.SignalR.Samples
 {
     public partial class Startup

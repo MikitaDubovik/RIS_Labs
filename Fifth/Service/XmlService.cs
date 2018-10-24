@@ -7,7 +7,7 @@ namespace Fifth
 {
     public class XmlService : DataService
     {
-        public override List<Bus> Load(string day = null)
+        public override IEnumerable<Bus> Load(string day = null)
         {
             XDocument xdoc = XDocument.Load(fileName);
             if (string.IsNullOrEmpty(day))

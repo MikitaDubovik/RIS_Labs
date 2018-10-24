@@ -18,8 +18,9 @@ namespace Fifth
                 Console.WriteLine("1.Reserve");
                 Console.WriteLine("2.Print all available trips");
                 Console.WriteLine("3.Print all your trips");
-                Console.WriteLine("4.Unreserve");
-                Console.WriteLine("5.Exit");
+                Console.WriteLine("4.Print trips in a certain day");
+                Console.WriteLine("5.Unreserve");
+                Console.WriteLine("6.Exit");
                 switch (Console.ReadLine())
                 {
                     case "1":
@@ -39,10 +40,15 @@ namespace Fifth
                         break;
                     case "4":
                         Console.Clear();
-                        _busService.UnReserve();
+                        _busService.PrintAllInDay();
                         Console.ReadKey();
                         break;
                     case "5":
+                        Console.Clear();
+                        _busService.UnReserve();
+                        Console.ReadKey();
+                        break;
+                    case "6":
                         Environment.Exit(0);
                         break;
                     default:

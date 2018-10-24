@@ -104,7 +104,23 @@
     <Compile Include="Hubs\Chat\ContentProviders\IContentProvider.cs" />
     <Compile Include="Hubs\Chat\ContentProviders\ImageContentProvider.cs" />
     <Compile Include="Hubs\Chat\ContentProviders\YoutubeContentProvider.cs" />
+    <Compile Include="Hubs\DrawingPad\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hubs\DrawingPad\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Hubs\DrawingPad\DrawingPad.cs" />
+    <Compile Include="SignalR.Master.cs">
+      <DependentUpon>SignalR.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SignalR.Master.designer.cs">
+      <DependentUpon>SignalR.Master</DependentUpon>
+    </Compile>
     <Compile Include="Startup.SignalR.cs" />
+    <Content Include="SignalR.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -118,6 +134,8 @@
     <Content Include="Hubs\Chat\index.htm" />
     <Content Include="Hubs\Chat\Mobile.css" />
     <Content Include="Hubs\Chat\mobile.htm" />
+    <Content Include="Hubs\DrawingPad\Default.aspx" />
+    <Content Include="Hubs\DrawingPad\drawingpad.js" />
     <Content Include="Hubs\ShapeShare\index.htm" />
     <Content Include="Hubs\ShapeShare\ShapeShare.css" />
     <Content Include="Hubs\ShapeShare\ShapeShare.js" />

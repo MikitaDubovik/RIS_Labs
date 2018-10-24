@@ -1,0 +1,31 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="SignalR.Master.cs" Inherits="Microsoft.AspNet.SignalR.Samples.SignalRMaster" %>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>ASP.NET SignalR</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-responsive.css" rel="stylesheet" />
+    <link href="~/Content/site.css" rel="stylesheet" />
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body>
+    <div class="container">
+        <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
+    </div>
+    <!-- /container -->
+
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="<%: ResolveUrl("~/Scripts/jquery-1.8.2.js") %>"></script>
+    <script src="<%: ResolveUrl("~/Scripts/bootstrap.js") %>"></script>
+    <script src="<%: ResolveUrl("~/Scripts/signalr.samples.js") %>"></script>
+    <script src="<%: ResolveUrl("~/Scripts/json2.js") %>"></script>
+    <script src="<%: ResolveUrl("~/Scripts/jquery.signalR.js") %>"></script>
+    <asp:ContentPlaceHolder runat="server" ID="Scripts"></asp:ContentPlaceHolder>
+</body>
+</html>
