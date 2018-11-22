@@ -1,7 +1,7 @@
 *ЗАШЕЛ - ПОСТАВИЛ ЗВЕЗДОЧКУ, АГА*
 Как запускать вторую - ниже, со всеми остальными легко разобраться
 
-Path to file: Your project folder -> bin -> Repo.txt
+Path to file: Your project folder -> Repo.txt
 
 Lab 1:
 VAR 4 - ice-cream
