@@ -1,0 +1,6 @@
+UserInfo - Name: q; Surname: w; Patronymic: e; Series of passport: r; Number of passport: 11
+
+UserInfo - Name: a; Surname: s; Patronymic: d; Series of passport: f; Number of passport: g
+ID - 2; Destination - Minsk-Riga
+ID - 4; Destination - Minsk-Kiev
+

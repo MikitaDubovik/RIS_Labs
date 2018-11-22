@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BusDepot>
+  <Bus day="Monday">
+    <Id>
+			1
+		</Id>
+    <Destination>
+			Minsk-Roma
+		</Destination>
+    <Cost>
+			1000
+		</Cost>
+    <FreePlace>25</FreePlace>
+  </Bus>
+  <Bus day="Monday">
+    <Id>
+			2
+		</Id>
+    <Destination>
+			Minsk-Riga
+		</Destination>
+    <Cost>
+			400
+		</Cost>
+    <FreePlace>22</FreePlace>
+  </Bus>
+  <Bus day="Monday">
+    <Id>
+			3
+		</Id>
+    <Destination>
+			Minsk-Moscow
+		</Destination>
+    <Cost>
+			800
+		</Cost>
+    <FreePlace>18</FreePlace>
+  </Bus>
+  <Bus day="Friday">
+    <Id>
+			4
+		</Id>
+    <Destination>
+			Minsk-Kiev
+		</Destination>
+    <Cost>
+			450
+		</Cost>
+    <FreePlace>17</FreePlace>
+  </Bus>
+  <Bus day="Friday">
+    <Id>
+			5
+		</Id>
+    <Destination>
+			Minsk-Paris
+		</Destination>
+    <Cost>
+			1100
+		</Cost>
+    <FreePlace>23</FreePlace>
+  </Bus>
+  <Bus day="Friday">
+    <Id>
+			6
+		</Id>
+    <Destination>
+			Minsk-Warsaw
+		</Destination>
+    <Cost>
+			500
+		</Cost>
+    <FreePlace>
+			30
+		</FreePlace>
+  </Bus>
+</BusDepot>

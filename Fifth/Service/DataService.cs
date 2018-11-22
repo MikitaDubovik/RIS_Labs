@@ -7,7 +7,7 @@ namespace Fifth
 {
     public class DataService
     {
-        protected readonly string fileName = Path.GetDirectoryName(Environment.CurrentDirectory) + "\\Repo.xml";
+        protected readonly string fileName = Path.GetDirectoryName(Environment.CurrentDirectory) + "\\..\\Repo.xml";
 
         public DataService()
         {

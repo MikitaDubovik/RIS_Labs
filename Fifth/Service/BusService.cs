@@ -11,7 +11,7 @@ namespace Fifth.Service
     {
         private XmlService _xmlservice = new XmlService();
 
-        private FileService _fileService = new FileService(Path.GetDirectoryName(Environment.CurrentDirectory) + "\\User.txt");
+        private FileService _fileService = new FileService(Path.GetDirectoryName(Environment.CurrentDirectory) + "\\..\\User.txt");
 
         private UserService _userService = new UserService();
 

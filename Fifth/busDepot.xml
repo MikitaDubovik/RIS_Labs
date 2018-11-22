@@ -1,0 +1,97 @@
+<BusDepot>
+
+  <Monday>
+    <Bus>
+      <Id>
+        1
+      </Id>
+      <Destination>
+        Minsk-Roma
+      </Destination>
+      <Cost>
+        1000
+      </Cost>
+      <FreePlace>
+        15
+      </FreePlace>
+    </Bus>
+
+    <Bus>
+      <Id>
+        2
+      </Id>
+      <Destination>
+        Minsk-Riga
+      </Destination>
+      <Cost>
+        400
+      </Cost>
+      <FreePlace>
+        25
+      </FreePlace>
+    </Bus>
+
+    <Bus>
+      <Id>
+        3
+      </Id>
+      <Destination>
+        Minsk-Moscow
+      </Destination>
+      <Cost>
+        800
+      </Cost>
+      <FreePlace>
+        20
+      </FreePlace>
+    </Bus>
+  </Monday>
+
+  <Friday>
+    <Bus>
+      <Id>
+        4
+      </Id>
+      <Destination>
+        Minsk-Kiev
+      </Destination>
+      <Cost>
+        450
+      </Cost>
+      <FreePlace>
+        20
+      </FreePlace>
+    </Bus>
+
+    <Bus>
+      <Id>
+        5
+      </Id>
+      <Destination>
+        Minsk-Paris
+      </Destination>
+      <Cost>
+        1100
+      </Cost>
+      <FreePlace>
+        25
+      </FreePlace>
+    </Bus>
+
+    <Bus>
+      <Id>
+        6
+      </Id>
+      <Destination>
+        Minsk-Warsaw
+      </Destination>
+      <Cost>
+        500
+      </Cost>
+      <FreePlace>
+        30
+      </FreePlace>
+    </Bus>
+  </Friday>
+
+</BusDepot>

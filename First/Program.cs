@@ -6,7 +6,7 @@ namespace RIS
 {
     public class Program
     {
-        private static readonly string FileName = Path.GetDirectoryName(Environment.CurrentDirectory) + "\\Repo.txt";
+        private static readonly string FileName = Path.GetDirectoryName(Environment.CurrentDirectory) + "\\..\\Repo.txt";
         private static readonly FileWorker FileWorker = new FileWorker(FileName);
 
         static void Main(string[] args)

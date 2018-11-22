@@ -8,7 +8,7 @@ namespace Second.Server
 {
     public partial class Server : Form
     {
-        private static readonly string FileName = Path.GetDirectoryName(Environment.CurrentDirectory) + "\\Repo.txt";
+        private static readonly string FileName = Path.GetDirectoryName(Environment.CurrentDirectory) + "\\..\\Repo.txt";
 
         private TcpListener listener;
         private Socket socket;
